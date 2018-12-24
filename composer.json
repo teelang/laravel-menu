@@ -1,0 +1,38 @@
+{
+    "name": "teelaravel/menu",
+    "description": "Menu feature for Laravel",
+    "keywords": ["laravel", "menu"],
+    "homepage": "https://github.com/teelang/laravel-menu",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tricky",
+            "email": "tricky@gvr.vn"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "require-dev": {
+        "illuminate/support": ">=5.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "TeeLaravel\\Menu\\": "src/"
+        },
+        "classmap": [
+            "src/Exceptions.php"
+        ],
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TeeLaravel\\Menu\\MenuServiceProvider"
+            ]
+        }
+    }
+}
